@@ -27,5 +27,24 @@ def ask_quit(self):
         os._exit(0)
 
 
-def ask_direct(self, e = None):
-    askdirectory()
+def ask_source(self, e = None):
+    src = askdirectory()
+    self.srcEntryBox.set(src)
+    self.path_source = self.srcEntryBox.set(src)
+##asks for source location and set the name oif the file
+
+
+def ask_destination(self, e=None):
+    self.des = askdirectory()
+    self.desEntryBox.set(self.des)
+    self.path_dest = self.desEntryBox.set(self.des)
+
+
+def list_directory(Self,des):
+
+    dirs = os.listdir(des)
+    for file in dirs:
+        print(file)
+
+
+

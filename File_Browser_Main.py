@@ -19,3 +19,4 @@ if __name__ == "__main__":
     root = Tk()
     App = ParentWindow(root)
     root.mainloop()
+    File_Browser_Function.list_directory()
