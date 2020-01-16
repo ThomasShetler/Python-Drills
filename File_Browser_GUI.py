@@ -27,6 +27,7 @@ def load_gui(self):
     self.btn_close = Button(self.master, width=12, height=2, text="Close", command=lambda: File_Browser_Function.ask_quit(self))
     self.btn_close.grid(row=3, column=10, padx=(15, 0), pady=(25, 10), sticky=E)
 
+    File_Browser_Function.create_db(self)
 
 if __name__ == "__main__":
     pass
